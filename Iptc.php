@@ -284,7 +284,7 @@ class Iptc
     {
     
         //beginning of the binary string
-        $iptcTag = chr(0x1c).chr($rec).chr($dat);
+        $iptcTag = chr(0x1c).chr($rec).chr(intval($dat));
 
         if (is_array($val)) {
             $src = '';
